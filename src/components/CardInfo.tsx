@@ -1,8 +1,4 @@
-interface CardInfoProps {
-  likes: number;
-  views: number;
-  downloads: number;
-}
+import { CardInfoProps } from "./PhotoCard/PhotoCard";
 
 export function CardInfo({ likes, downloads, views }: CardInfoProps) {
   return (

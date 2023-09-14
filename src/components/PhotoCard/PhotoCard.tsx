@@ -1,12 +1,14 @@
 import { CardInfo } from "../CardInfo";
 import { Tag } from "../Tag";
-
-export interface PhotoData {
-  id: number;
-  downloads: number;
+export interface CardInfoProps {
   likes: number;
-  user: string;
   views: number;
+  downloads: number;
+}
+
+export interface PhotoData extends CardInfoProps {
+  id: number;
+  user: string;
   webformatURL: string;
   webformatWidth: number;
   webformatHeight: number;
